@@ -10,4 +10,9 @@ describe "fizzbuzz" do
   it "returns buzz when number is divisible by 5" do
     expect(fizzbuzz(20)).to eq "buzz"
   end
+  it "returns number when number is not divisible by 3 or 5" do
+    [1,2,4,7,11,97,98].each do |x|
+      expect(fizzbuzz(x)).to eq x
+    end
+  end
 end
